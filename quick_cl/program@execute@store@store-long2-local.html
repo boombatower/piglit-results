@@ -11,7 +11,7 @@
     <h1>Results for program@execute@store@store-long2-local</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> pass</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -22,11 +22,11 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.414257</b>
+        <td>0:00:00.356979</b>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -40,10 +40,14 @@
 #   OpenCL version: 1.2
 #   OpenCL C version: 1.1
 #   Build options: -D TYPE=long2 -cl-std=CL1.1
-Build log for device AMD TAHITI (DRM 2.43.0, LLVM 3.7.0):
- -------- 
-unsupported call to function get_local_id in store_local
- -------- 
+Program has been built successfully
+&gt; Running kernel test: local address space
+Using kernel store_local
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt;&gt; All of the tests PASSED
 # Result:
 </pre>
         </td>
@@ -51,8 +55,7 @@ unsupported call to function get_local_id in store_local
       <tr>
         <td>Stderr</td>
         <td>
-          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
-</pre>
+          <pre></pre>
         </td>
       </tr>
       <tr>

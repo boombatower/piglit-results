@@ -11,7 +11,7 @@
     <h1>Results for program@execute@vstore-int</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> pass</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -22,11 +22,11 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.650718</b>
+        <td>0:00:00.528931</b>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -40,10 +40,68 @@
 #   OpenCL version: 1.2
 #   OpenCL C version: 1.1
 #   Build options:  -cl-std=CL1.1
-Build log for device AMD TAHITI (DRM 2.43.0, LLVM 3.7.0):
- -------- 
-unsupported call to function _Z7vstore2Dv2_ijPU3AS1i in vstore2_test
- -------- 
+Program has been built successfully
+&gt; Running kernel test: vector store int2
+Using kernel vstore2_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int2 with offset
+Using kernel vstore2_offset
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int3
+Using kernel vstore3_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int3 with offset
+Using kernel vstore3_offset
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int4
+Using kernel vstore4_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int4 with offset
+Using kernel vstore4_offset
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int8
+Using kernel vstore8_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int8 with offset
+Using kernel vstore8_offset
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int16
+Using kernel vstore16_test
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt; Running kernel test: vector store int16 with offset
+Using kernel vstore16_offset
+Setting kernel arguments...
+Running the kernel...
+Validating results...
+ Argument 0: PASS
+&gt;&gt; All of the tests PASSED
 # Result:
 </pre>
         </td>
@@ -51,8 +109,7 @@ unsupported call to function _Z7vstore2Dv2_ijPU3AS1i in vstore2_test
       <tr>
         <td>Stderr</td>
         <td>
-          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
-</pre>
+          <pre></pre>
         </td>
       </tr>
       <tr>

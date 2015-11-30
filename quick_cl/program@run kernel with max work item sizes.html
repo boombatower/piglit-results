@@ -11,7 +11,7 @@
     <h1>Results for program@run kernel with max work item sizes</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> pass</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -22,11 +22,11 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.312790</b>
+        <td>0:00:00.349587</b>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -40,11 +40,17 @@
 #   OpenCL version: 1.2
 #   OpenCL C version: 1.1
 #   Build options:  -cl-std=CL1.1
-Build log for device AMD TAHITI (DRM 2.43.0, LLVM 3.7.0):
- -------- 
-input.cl:1:90: warning: implicit declaration of function &#39;get_work_dim&#39; is invalid in C99
-unsupported call to function get_work_dim in test
- -------- 
+Dimensions: 3
+Max group size: 256
+Max item size dimension 1: 256
+Max item size dimension 2: 256
+Max item size dimension 3: 256
+Testing max item size in dimension 1:
+  Global work size and local work size is: {256, 0, 0}
+Testing max item size in dimension 2:
+  Global work size and local work size is: {1, 256, 0}
+Testing max item size in dimension 3:
+  Global work size and local work size is: {1, 1, 256}
 # Result:
 </pre>
         </td>
@@ -52,8 +58,7 @@ unsupported call to function get_work_dim in test
       <tr>
         <td>Stderr</td>
         <td>
-          <pre>Could not build program: CL_BUILD_PROGRAM_FAILURE
-</pre>
+          <pre></pre>
         </td>
       </tr>
       <tr>
